@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  background-color: rgb(252, 252, 252);
+  min-height: 100vh;
+  width: 100vw;
+  align-items: flex-start;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+}
+.main {
+}
+.indicadores {
+  padding: 100px;
+  color: white;
+  width: 100vw;
+  height: 40vh;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://wallpapercave.com/wp/wp7373622.jpg);
+}
+
+.monto {
+  color: rgba(255, 255, 255, 1);
+  font-size: 80px;
+}
+
+.indicadores .ingresos {
+  width: 40%;
+  margin: auto;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-weight: 900;
+  font-size: 30px;
+  background-color: rgba(35, 182, 55, 0.8);
+}
+.indicadores .egresos {
+  width: 40%;
+  margin: auto;
+  padding: 10px;
+  font-weight: 900;
+  font-size: 30px;
+  background-color: rgb(240, 107, 107, 0.8);
+}
+
+.formulario {
+ 
+  background-color: rgba(119, 136, 153, 0.2);
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+input,
+select,
+button {
+  padding: 5px;
+  border-radius: 5px;
+  height: 40px;
+  border: none;
+  outline: none;
+}
+#descripcion {
+  width: 50%;
+}
+#valor {
+  width: 15%;
+}
+#agregar {
+  padding: 10px;
+  width: 100px;
+  cursor: pointer;
+  background-color: rgb(182, 14, 117);
+  color: white;
+  font-weight: 700;
+  transition: 0.5s;
+}
+#agregar:hover {
+  background-color: rgb(122, 8, 79);
+  transition: 0.5s;
+}
+
+.elementos {
+  display: flex;
+  justify-content: center;
+}
+.elemIngresos {
+  padding: 30px;
+  width: 40%;
+}
+.elemEgresos {
+  padding: 30px;
+  width: 40%;
+}
+.elemIngresos h3 {
+  border-bottom: 2px solid rgba(35, 182, 55, 0.8);
+  margin-bottom: 20px;
+}
+.elemEgresos h3 {
+  border-bottom: 2px solid rgb(240, 107, 107, 0.8);
+  margin-bottom: 20px;
+}
+.elemIngresos li {
+  background-color: rgba(158, 223, 166, 0);
+  padding: 10px;
+  list-style: none;
+ 
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.elemIngresos li:nth-child(2n) {
+  background-color: rgba(129, 218, 140, 0.2);
+}
+
+.elemEgresos li {
+  background-color: rgba(223, 158, 158, 0);
+  padding: 10px;
+  list-style: none;
+ 
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.elemEgresos li:nth-child(2n) {
+  background-color: rgba(218, 129, 129, 0.2);
+}
+
+li samp {
+  margin: auto 0;
+  font-size: 15px;
+}
+li button {
+  background-color: crimson;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+li button:hover {
+  background-color: rgb(129, 4, 29);
+  transition: 0.5s;
+}
