@@ -5,17 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-	 crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
     <title>Control de Presupusto</title>
   </head>
   <body>
     <div class="main">
-      <div class="indicadores">
+      <div class="resumen">
         <h2>Presupusto Disponible :</h2>
-        <div class="monto" id="monto">$25.680</div>
-        <div class="ingresos">INGRESOS: $25.000</div>
-        <div class="egresos">EGRESOS: $2.452</div>
+        <div class="resumen__monto" id="monto">$25.680</div>
+        <div class="resumen__ingresos">INGRESOS: $25.000</div>
+        <div class="resumen__egresos">EGRESOS: $2.452</div>
       </div>
       <div class="formulario">
         <form action="">
@@ -37,21 +41,30 @@
         <div class="elemIngresos">
           <h3>INGRESOS</h3>
           <ul>
-            <div class="" id="ingresoItem"></div>
-            <li><samp>Supermercado $20.000</samp> <button><i class="far fa-trash-alt"></i></button></li>
-            <li><samp>Supermercado $20.000</samp> <button>Eliminar</button></li>
-            <li><samp>Supermercado $20.000</samp> <button>Eliminar</button></li>
-            <li><samp>Supermercado $20.000</samp> <button>Eliminar</button></li>
+            <div class="ingresoItem" id="ingresoItem"></div>
+            <li class="ingresoItem">
+              <samp><small>mie. 4 Ago |</small>Supermercado $20.000 </samp>
+              <button class="delete"><i class="far fa-trash-alt"></i></button>
+            </li>
+            <li class="ingresoItem">
+              <samp><small>mie. 4 Ago |</small>Supermercado $20.000 </samp>
+              <button class="delete"><i class="far fa-trash-alt"></i></button>
+            </li>
           </ul>
         </div>
-        <div class="elemEgresos"><h3>EGRESOS</h3><ul>
-                <div class="" id="ingresoItem"></div>
-                <li><samp>Supermercado $20.000</samp> <button>Eliminar</button></li>
-                <li><samp>Supermercado $20.000</samp> <button>Eliminar</button></li>
-                <li><samp>Supermercado $20.000</samp> <button>Eliminar</button></li>
-                <li><samp>Supermercado $20.000</samp> <button>Eliminar</button></li>
-              </ul></div>
+        <div class="elemEgresos">
+          <h3>EGRESOS</h3>
+          <ul>
+            <div class="" id="egresoItem"></div>
+
+            <li>
+              <samp><small>mie. 4 Ago |</small>Supermercado $20.000 </samp>
+              <button class="delete"><i class="far fa-trash-alt"></i></button>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>

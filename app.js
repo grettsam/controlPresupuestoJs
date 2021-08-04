@@ -1,0 +1,2 @@
+let deleteButton = "<button class='delete'><i class='far fa-trash-alt'></i></button>"
+document.getElementById('ingresoItem').innerHTML = `<li><samp><small>mie. 4 Ago |</small>Supermercado $15.000 </samp>${deleteButton}</li>`

@@ -12,49 +12,45 @@ body {
   justify-content: center;
   font-family: "Courier New", Courier, monospace;
 }
-.main {
-}
-.indicadores {
-  padding: 100px;
-  color: white;
+
+/*Resumen*/
+.resumen {
   width: 100vw;
   height: 40vh;
+  padding: 100px;
+  color: white;
   text-align: center;
   background-position: center;
   background-size: cover;
   background-image: url(https://wallpapercave.com/wp/wp7373622.jpg);
 }
-
-.monto {
-  color: rgba(255, 255, 255, 1);
+.resumen__egresos,
+.resumen__ingresos {
+  width: 40%;
+  margin: auto;
+  padding: 10px;
+  font-weight: 900;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.resumen__monto {
   font-size: 80px;
 }
-
-.indicadores .ingresos {
-  width: 40%;
-  margin: auto;
-  padding: 10px;
-  margin-bottom: 20px;
-  font-weight: 900;
-  font-size: 30px;
+.resumen__ingresos {
   background-color: rgba(35, 182, 55, 0.8);
 }
-.indicadores .egresos {
-  width: 40%;
-  margin: auto;
-  padding: 10px;
-  font-weight: 900;
-  font-size: 30px;
+.resumen__egresos {
   background-color: rgb(240, 107, 107, 0.8);
 }
-
+/*End Resumen*/
+/*Formulario*/
 .formulario {
- 
   background-color: rgba(119, 136, 153, 0.2);
   display: flex;
   justify-content: center;
   padding: 20px;
 }
+
 input,
 select,
 button {
@@ -83,7 +79,7 @@ button {
   background-color: rgb(122, 8, 79);
   transition: 0.5s;
 }
-
+/*End Formulario*/
 .elementos {
   display: flex;
   justify-content: center;
@@ -104,11 +100,11 @@ button {
   border-bottom: 2px solid rgb(240, 107, 107, 0.8);
   margin-bottom: 20px;
 }
+
 .elemIngresos li {
   background-color: rgba(158, 223, 166, 0);
   padding: 10px;
   list-style: none;
- 
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -117,11 +113,18 @@ button {
   background-color: rgba(129, 218, 140, 0.2);
 }
 
+.ingresoItem:hover {
+  background-color: rgba(158, 223, 166, 0.6);
+}
+.ingresoItem:nth-child(2n):hover {
+  background-color: rgba(129, 218, 140, 0.4);
+}
+
 .elemEgresos li {
   background-color: rgba(223, 158, 158, 0);
   padding: 10px;
   list-style: none;
- 
+
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -134,14 +137,23 @@ li samp {
   margin: auto 0;
   font-size: 15px;
 }
-li button {
-  background-color: crimson;
-  color: #fff;
+
+li small {
+  margin: auto 10px auto 20px;
+}
+
+.delete {
+  border: 1px solid crimson;
+  color: crimson;
   font-weight: 700;
   cursor: pointer;
   transition: 0.2s;
+  width: 40px;
 }
-li button:hover {
-  background-color: rgb(129, 4, 29);
+.delete:hover {
+  background-color: crimson;
+  color: white;
   transition: 0.5s;
+  border: none;
+  box-shadow: 2px 2px 6px rgb(212, 74, 102);
 }
