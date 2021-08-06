@@ -15,16 +15,23 @@
   </head>
   <body>
     <div class="main">
+      <!--Resumen-->
       <div class="resumen">
         <h2>Presupusto Disponible :</h2>
         <div class="resumen__monto" id="monto">$25.680</div>
         <div class="resumen__ingresos">INGRESOS: $25.000</div>
         <div class="resumen__egresos">EGRESOS: $2.452</div>
       </div>
+      <!--Formulario-->
       <div class="formulario">
-        <form action="">
-          <select name="" id="">
-            <option value="Ingreso">+ Ingreso</option>
+        <div class="main__formulario">
+          <select
+            name="opcion"
+            id="opcion"
+            class="formulario__opcion"
+            onchange="formOpcion()"
+          >
+            <option value="Ingreso" selected>+ Ingreso</option>
             <option value="Egreso">- Egreso</option>
           </select>
           <input
@@ -32,39 +39,41 @@
             name="descripcion"
             id="descripcion"
             placeholder="Agregar Descripción"
+            class="formulario__descripcion"
           />
-          <input type="number" name="valor" id="valor" placeholder="Valor" />
-          <button id="agregar">Agregar</button>
-        </form>
+          <input
+            type="number"
+            name="valor"
+            id="valor"
+            placeholder="Valor"
+            class="formulario__valor"
+          />
+          <button
+            id="agregarElemento"
+            class="formulario__agregar"
+            onclick="agregar()"
+          >
+            Agregar
+          </button>
+        </div>
       </div>
-      <div class="elementos">
-        <div class="elemIngresos">
+      <!--Detalles-->
+      <div class="detalles">
+        <div class="detalles__elementos detalles__elementos--ingreso">
           <h3>INGRESOS</h3>
           <ul>
-            <div class="ingresoItem" id="ingresoItem"></div>
-            <li class="ingresoItem">
-              <samp><small>mie. 4 Ago |</small>Supermercado $20.000 </samp>
-              <button class="delete"><i class="far fa-trash-alt"></i></button>
-            </li>
-            <li class="ingresoItem">
-              <samp><small>mie. 4 Ago |</small>Supermercado $20.000 </samp>
-              <button class="delete"><i class="far fa-trash-alt"></i></button>
-            </li>
+            <div id="item__ingreso"></div>
           </ul>
         </div>
-        <div class="elemEgresos">
+        <div class="detalles__elementos detalles__elementos--egreso">
           <h3>EGRESOS</h3>
           <ul>
-            <div class="" id="egresoItem"></div>
-
-            <li>
-              <samp><small>mie. 4 Ago |</small>Supermercado $20.000 </samp>
-              <button class="delete"><i class="far fa-trash-alt"></i></button>
-            </li>
+            <div id="item__egreso"></div>
           </ul>
         </div>
       </div>
     </div>
+    <script src="elemento.js"></script>
     <script src="app.js"></script>
   </body>
 </html>

@@ -50,23 +50,27 @@ body {
   justify-content: center;
   padding: 20px;
 }
-
+.main__formulario {
+  width: 50%;
+  margin: auto;
+}
 input,
 select,
 button {
+  margin: 0 10px;
   padding: 5px;
   border-radius: 5px;
   height: 40px;
   border: none;
   outline: none;
 }
-#descripcion {
+.formulario__descripcion {
   width: 50%;
 }
-#valor {
+.formulario__valor {
   width: 15%;
 }
-#agregar {
+.formulario__agregar {
   padding: 10px;
   width: 100px;
   cursor: pointer;
@@ -75,62 +79,65 @@ button {
   font-weight: 700;
   transition: 0.5s;
 }
-#agregar:hover {
+.formulario__agregar:hover {
   background-color: rgb(122, 8, 79);
   transition: 0.5s;
 }
 /*End Formulario*/
-.elementos {
+/*Detalles */
+.detalles {
   display: flex;
   justify-content: center;
 }
-.elemIngresos {
+.detalles__elementos {
   padding: 30px;
   width: 40%;
 }
-.elemEgresos {
-  padding: 30px;
-  width: 40%;
-}
-.elemIngresos h3 {
-  border-bottom: 2px solid rgba(35, 182, 55, 0.8);
-  margin-bottom: 20px;
-}
-.elemEgresos h3 {
-  border-bottom: 2px solid rgb(240, 107, 107, 0.8);
+
+.detalles__elementos h3 {
   margin-bottom: 20px;
 }
 
-.elemIngresos li {
-  background-color: rgba(158, 223, 166, 0);
+.detalles__elementos--ingreso h3 {
+  border-bottom: 2px solid rgba(35, 182, 55, 0.8);
+}
+
+.detalles__elementos--egreso h3 {
+  border-bottom: 2px solid rgb(240, 107, 107, 0.8);
+}
+
+.detalles__elementos li {
   padding: 10px;
   list-style: none;
   display: flex;
   justify-content: space-between;
   align-content: center;
 }
-.elemIngresos li:nth-child(2n) {
+
+.detalles__elementos--ingreso li {
+  background-color: rgba(158, 223, 166, 0);
+}
+.detalles__elementos--ingreso li:nth-child(2n) {
   background-color: rgba(129, 218, 140, 0.2);
 }
-
-.ingresoItem:hover {
+.detalles__elementos--ingreso ul li:hover {
   background-color: rgba(158, 223, 166, 0.6);
 }
-.ingresoItem:nth-child(2n):hover {
+.detalles__elementos--ingreso ul li:nth-child(2n):hover {
   background-color: rgba(129, 218, 140, 0.4);
 }
 
-.elemEgresos li {
+.detalles__elementos--egreso li {
   background-color: rgba(223, 158, 158, 0);
-  padding: 10px;
-  list-style: none;
-
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
 }
-.elemEgresos li:nth-child(2n) {
+.detalles__elementos--egreso li:nth-child(2n) {
   background-color: rgba(218, 129, 129, 0.2);
+}
+.detalles__elementos--egreso ul li:hover {
+  background-color: rgba(223, 158, 158, 0.6);
+}
+.detalles__elementos--egreso ul li:nth-child(2n):hover {
+  background-color: rgba(218, 129, 129, 0.4);
 }
 
 li samp {
