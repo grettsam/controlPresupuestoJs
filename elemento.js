@@ -1,8 +1,14 @@
 class Elemento {
+  static contadorElemento = 0;
   constructor(opcion, descripcion, valor) {
     this._opcion = opcion;
     this._descripcion = descripcion;
     this._valor = valor;
+    this._idElemento = Elemento.contadorElemento++;
+  }
+
+  get idElemento() {
+    return this._idElemento;
   }
 
   get opcion() {
@@ -23,5 +29,5 @@ class Elemento {
   set valor(valor) {
     this._valor = valor;
   }
-  
+ 
 }

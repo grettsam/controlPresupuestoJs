@@ -18,9 +18,9 @@
       <!--Resumen-->
       <div class="resumen">
         <h2>Presupusto Disponible :</h2>
-        <div class="resumen__monto" id="monto">$25.680</div>
-        <div class="resumen__ingresos">INGRESOS: $25.000</div>
-        <div class="resumen__egresos">EGRESOS: $2.452</div>
+        <div class="resumen__monto">$<samp id="total">0</samp></div>
+        <div class="resumen__ingresos">INGRESOS: $<samp id='totalIngresos'>0</div>
+        <div class="resumen__egresos">EGRESOS: $<samp id='totalEgresos'>0</samp></div>
       </div>
       <!--Formulario-->
       <div class="formulario">
@@ -42,16 +42,19 @@
             class="formulario__descripcion"
           />
           <input
+          value="0"
+            min="0"
             type="number"
             name="valor"
             id="valor"
-            placeholder="Valor"
+            placeholder="$ Valor"
             class="formulario__valor"
           />
           <button
             id="agregarElemento"
             class="formulario__agregar"
-            onclick="agregar()"
+            onclick="agregar()
+            "
           >
             Agregar
           </button>

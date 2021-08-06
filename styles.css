@@ -16,8 +16,7 @@ body {
 /*Resumen*/
 .resumen {
   width: 100vw;
-  height: 40vh;
-  padding: 100px;
+  padding: 3%;
   color: white;
   text-align: center;
   background-position: center;
@@ -51,8 +50,10 @@ body {
   padding: 20px;
 }
 .main__formulario {
-  width: 50%;
+  width: 40%;
   margin: auto;
+  display: flex;
+  justify-content: space-between;
 }
 input,
 select,
@@ -68,7 +69,7 @@ button {
   width: 50%;
 }
 .formulario__valor {
-  width: 15%;
+  width: 10%;
 }
 .formulario__agregar {
   padding: 10px;
@@ -150,17 +151,20 @@ li small {
 }
 
 .delete {
-  border: 1px solid crimson;
+  background-color: transparent;
   color: crimson;
   font-weight: 700;
   cursor: pointer;
-  transition: 0.2s;
-  width: 40px;
+  transition: 0.1s;
+  width: 30px;
+  height: 30px;
+  opacity: .3;
 }
 .delete:hover {
-  background-color: crimson;
-  color: white;
-  transition: 0.5s;
-  border: none;
+  border-radius: 50%;
+  color: crimson;
+  transition: 0.3s;
+  border: 1px solid crimson;
   box-shadow: 2px 2px 6px rgb(212, 74, 102);
+  opacity: .8;
 }
